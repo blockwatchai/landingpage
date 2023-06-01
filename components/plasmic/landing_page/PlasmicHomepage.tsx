@@ -1299,7 +1299,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__raZl
                     )}
                     component={Link}
-                    href={"https://twitter.com/BlockWatchAI" as const}
+                    href={"https://t.me/+QuWWaBdjmJYyZjI0" as const}
                     platform={"nextjs"}
                   >
                     <Icon3Icon
