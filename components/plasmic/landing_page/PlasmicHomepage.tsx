@@ -46,8 +46,11 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_landing_page.module.css"; // plasmic-import: kfPEmQD4mqLJRqSWK8kuhr/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Uaiq5RFrvCZT/css
 
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: yuoNdN3t3wp/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: qo4YR1dBDc/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: Y5Er5CI_x5G/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: yuoNdN3t3wp/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: uOussjhxUI/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: R2xXt7fqB6/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -119,7 +122,20 @@ function PlasmicHomepage__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary" />
+        <title key="title">{PlasmicHomepage.pageMetadata.title}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+        <meta
+          key="twitter:title"
+          name="twitter:title"
+          content={PlasmicHomepage.pageMetadata.title}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -228,7 +244,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__xbvKs
                     )}
                     component={Link}
-                    href={"/" as const}
+                    href={"#about" as const}
                     platform={"nextjs"}
                   >
                     {"About"}
@@ -241,7 +257,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link___6VPuh
                     )}
                     component={Link}
-                    href={"/" as const}
+                    href={"#products" as const}
                     platform={"nextjs"}
                   >
                     {"Product"}
@@ -254,7 +270,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__nQfrA
                     )}
                     component={Link}
-                    href={"/" as const}
+                    href={"#teams" as const}
                     platform={"nextjs"}
                   >
                     {"Teams"}
@@ -267,7 +283,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.link__tmS4C
                     )}
                     component={Link}
-                    href={"/" as const}
+                    href={"#roadmap" as const}
                     platform={"nextjs"}
                   >
                     {"Roadmap"}
@@ -324,6 +340,16 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__zmqcL)}
                     color={"link" as const}
+                    link={
+                      "https://blockwatchai.gitbook.io/blockwatchai/" as const
+                    }
+                    showStartIcon={true}
+                    startIcon={
+                      <Icon4Icon
+                        className={classNames(projectcss.all, sty.svg__o2EM)}
+                        role={"img"}
+                      />
+                    }
                   >
                     {"Read Our Docs"}
                   </Button>
@@ -337,7 +363,10 @@ function PlasmicHomepage__RenderFunc(props: {
               ) : null}
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section__dQ2M)}>
+          <section
+            className={classNames(projectcss.all, sty.section__dQ2M)}
+            id={"about" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__aGoLv)}>
               <div className={classNames(projectcss.all, sty.columns__chl49)}>
                 <div className={classNames(projectcss.all, sty.column__s4M5E)}>
@@ -385,7 +414,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section__tY3Dg)}>
+          <section
+            className={classNames(projectcss.all, sty.section__tY3Dg)}
+            id={"products" as const}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__ga7Of)}>
               <h2
                 className={classNames(
@@ -609,7 +641,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section__vN1)}>
+          <section
+            className={classNames(projectcss.all, sty.section__vN1)}
+            id={"teams" as const}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -829,7 +864,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           </section>
-          <section className={classNames(projectcss.all, sty.section__pEv1Y)}>
+          <section
+            className={classNames(projectcss.all, sty.section__pEv1Y)}
+            id={"roadmap" as const}
+          >
             <p.Stack
               as={"div"}
               hasGap={true}
@@ -1231,9 +1269,62 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text___29Bx
                     )}
                   >
-                    {"Join Community"}
+                    {"Join Whitelist"}
                   </div>
                 </Button>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__imvKt)}
+                >
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__ydrfq
+                    )}
+                    component={Link}
+                    href={"https://twitter.com/BlockWatchAI" as const}
+                    platform={"nextjs"}
+                  >
+                    <Icon2Icon
+                      className={classNames(projectcss.all, sty.svg__ew18M)}
+                      role={"img"}
+                    />
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__raZl
+                    )}
+                    component={Link}
+                    href={"https://twitter.com/BlockWatchAI" as const}
+                    platform={"nextjs"}
+                  >
+                    <Icon3Icon
+                      className={classNames(projectcss.all, sty.svg__r9U57)}
+                      role={"img"}
+                    />
+                  </p.PlasmicLink>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__ci4M7
+                    )}
+                    component={Link}
+                    href={
+                      "https://blockwatchai.gitbook.io/blockwatchai/" as const
+                    }
+                    platform={"nextjs"}
+                  >
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__eqdwm)}
+                      role={"img"}
+                    />
+                  </p.PlasmicLink>
+                </p.Stack>
               </p.Stack>
             </div>
           </section>
@@ -1383,7 +1474,8 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
+      title:
+        "BlockwatchAI | Building Trust  in The Decentralized World with AI",
       description: "",
       ogImageSrc: "",
       canonical: ""

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -39,7 +39,8 @@
           "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kfPEmQD4mqLJRqSWK8kuhr",
@@ -86,6 +87,21 @@
           "id": "Y5Er5CI_x5G",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/landing_page/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "uOussjhxUI",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/landing_page/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "R2xXt7fqB6",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/landing_page/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "qo4YR1dBDc",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/landing_page/icons/PlasmicIcon__Icon4.tsx"
         }
       ],
       "images": [
@@ -212,6 +228,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.286",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.286/dist/plasmic.schema.json"
+  "cliVersion": "0.1.287",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.287/dist/plasmic.schema.json"
 }
