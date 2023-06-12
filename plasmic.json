@@ -131,11 +131,6 @@
           "filePath": "../public/plasmic/landing_page/images/sboutshieldpng.png"
         },
         {
-          "id": "iXUSmqgQT",
-          "name": "puja.exe_3d_illustration_an_artificial_neural_network_that_form_57f11807-bd1f-4d3d-9afa-62bd342561ce.png",
-          "filePath": "../public/plasmic/landing_page/images/pujaexe3DIllustrationAnArtificialNeuralNetworkThatForm57F11807Bd1F4D3D9Afa62Bd342561Cepng.png"
-        },
-        {
           "id": "kmKAIqiPg",
           "name": "bg-hero-edit.png",
           "filePath": "../public/plasmic/landing_page/images/bgHeroEditpng.png"
@@ -228,6 +223,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.287",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.287/dist/plasmic.schema.json"
+  "cliVersion": "0.1.292",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.292/dist/plasmic.schema.json"
 }
